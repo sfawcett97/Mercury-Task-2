@@ -1,0 +1,57 @@
+﻿@model Mercury_Project_Try_4.Models.DataModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+
+
+<hr />
+
+<div class="text-center">
+    <div class="centerContent">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group entryField">
+
+                <label asp-for="NameIn" class="control-label text textPlain labels">Name:</label>
+                <input asp-for="NameIn" class="form-control inField text textPlain" placeholder="Enter Your Name", onblur="nameValidation()"/>
+                <p class="warning text" id="nameWarning">Please enter a valid name.</p>
+                <p class="text warningBreak" id="nameBreak"><br /></p>
+                <span asp-validation-for="NameIn" class="text-danger"></span>
+            </div>
+            <div class="form-group entryField">
+                <label asp-for="EmailIn" class="control-label text textPlain labels">Email:</label>
+                <input asp-for="EmailIn" class="form-control inField  text textPlain" placeholder="Enter Your Email", onblur="emailValidation()" />
+                <p class="warning text" id="emailWarning">Please enter a valid email address.</p>
+                <p class="text warningBreak" id="emailBreak"><br /></p>
+                <span asp-validation-for="EmailIn" class="text-danger"></span>
+            </div>
+            <div class="form-group entryField">
+                <label asp-for="CardIn" class="text textPlain labels">Card:</label>
+                <input asp-for="CardIn" class="form-control inField text textPlain" placeholder="Enter Your A Proxy Credit Card Number", onblur="cardValidation()"/> 
+                <p class="warning text" id="cardWarning">Please enter a valid card number.</p>
+                <p class="text warningBreak" id="cardBreak"><br /></p>
+                <span asp-validation-for="CardIn" class="text-danger" ></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" id="SubButton" class="btn btn-primary text textPlain" onclick="submit()"/>
+            </div>
+            }
+    </div>
+</div>
+            
+            
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,122 @@
+.text {
+    font-size: 20px;
+    font-family: calibri;
+}
+
+body, input {
+    font-family: calibri;
+    font-size: 18px;
+    color: rgb(60,60,59);
+}
+
+.textPlain {
+    color: rgb(60,60,59);
+}
+
+.centerContent {
+    margin: 0;
+    width: 30%;
+    min-width: 400px;
+    min-height: 200px;
+    max-height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: RGB(137,200,46);
+    border-style: solid;
+    border-color: RGB(60, 60, 59);
+    border-width: 6px;
+    border-radius: 40px;
+    padding: 50px 5px 20px 5px;
+}
+
+.labels {
+    display: inline-block;
+    width: 60px;
+}
+
+
+.inField {
+    width: 275px;
+    height: 20px;
+    margin: auto;
+    justify-content: center;
+    padding: 2px;
+    display: inline-block;
+}
+
+
+.inputName {
+    grid-area: inName;
+    padding-bottom: 15px;
+}
+
+.inputEmail {
+    grid-area: inEmail;
+    padding-bottom: 15px;
+}
+
+.inputCard {
+    grid-area: inCard;
+    padding-bottom: 15px;
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 0;
+}
+.warning { /*User stories specify using the same font size for all text */
+    padding: 0px;
+    margin: -8px;
+    text-align: center;
+    color: rgb(231,0,100);
+    font-family: calibri;
+    display: none;
+}
+.warningBreak { /*User stories specify using the same font size for all text */
+    padding: 0px;
+    margin: -8px;
+    text-align: center;
+    color: rgb(231,0,100);
+    font-family: calibri;
+    
+}
+
+#SubButton {
+    background: rgb(231,0,100);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(60,60,59);
+    padding: 5px 20px 5px 20px;
+    bottom: 5px;
+    left: 37%;
+}
+
+.formClass {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    grid-template:
+        'inName'
+        'inEmail'
+        'inCard'
+        'inSub';
+    grid-row-gap: 0px;
+    padding: 0px;
+}
+
+.entryField {
+}
+
+
+
+#SubButton:hover {
+    cursor: pointer;
+}
