@@ -38,9 +38,9 @@ namespace Mercury_Project_Try_4.Controllers
                 MailMessage msg = new();
                 SmtpClient smtp = new();
 
-                var fromAddress = new MailAddress("SfawcettTestEmail@gmail.com", "From Validation");
-                var toAddress = new MailAddress("test@dn-uk.com", "Test");
-                msg.To.Add(new MailAddress("sfawcett1997@hotmail.com"));
+                //var fromAddress = new MailAddress("SfawcettTestEmail@gmail.com", "From Validation");
+                //var toAddress = new MailAddress("test@dn-uk.com", "Test");
+                msg.To.Add(new MailAddress("test@dn-uk.com"));
 
 
                 msg.Subject = "User Data";
