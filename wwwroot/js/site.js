@@ -179,8 +179,8 @@ function enableSub() {
     document.getElementById('SubButton').style.cursor = 'pointer';
 }
 
-function submit() {
-    submitValue = [nameValue, emailValue, cardValue];
-    console.log("Name: " + submitValue[0] + ". " + "Email: " + submitValue[1] + ". " + "Card: " + submitValue[2] + ".");
+function submit() { //MVC makes this section obsolete.
+    //submitValue = [nameValue, emailValue, cardValue];
+    //console.log("Name: " + submitValue[0] + ". " + "Email: " + submitValue[1] + ". " + "Card: " + submitValue[2] + ".");
 
 }       //
